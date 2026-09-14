@@ -241,17 +241,19 @@ foto4.jpg
 
 <h2>📧 Contáctanos</h2>
 
-https://formsubmit.co/evangelismotexodo@gmail.com
+<form action="https://formsubmit.co" method="POST">
 
-<input type="text" placeholder="Nombre" required>
+  <!-- Campos de texto para el usuario -->
+  <input type="text" name="name" placeholder="Nombre" required>
+  <input type="email" name="email" placeholder="Correo electrónico" required>
+  <textarea name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
 
-<input type="email" placeholder="Correo electrónico" required>
+  <!-- Configuración opcional de FormSubmit (Evita el Spam / Captcha) -->
+  <input type="hidden" name="_next" value="https://github.io">
+  <input type="hidden" name="_captcha" value="false">
 
-<textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
-
-<button type="submit">
-Enviar Mensaje
-</button>
+  <!-- Botón de envío -->
+  <button type="submit">Enviar Mensaje</button>
 
 </form>
 
