@@ -26,8 +26,6 @@ text-align:center;
 padding:30px;
 }
 
-
-
 nav{
 background:#1d3557;
 padding:15px;
@@ -114,7 +112,21 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+.header-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.logo-header {
+  width: 120px;
+  height: auto;
+}
+
+.texto-header {
+  text-align: left;
+}
 </style>
 </head>
 
@@ -122,14 +134,14 @@ margin-top:40px;
 
 <header>
 
-<img src="logo.jpeg" alt="Logo de Evangelismo Texodo" 
-width:30px;
-border-radius:10%;
-margin-bottom:15px;>
-
-<h1>SIGUE A CRISTO</h1>
-
-<p><strong>Llevando almas a Cristo, transformando vidas para la eternidad.</strong></p>
+<div class="header-contenedor">
+    <img src="logo.jpeg" alt="Logo de Evangelismo Texodo" class="logo-header">
+    
+    <div class="texto-header">
+      <h1>SIGUE A CRISTO</h1>
+      <p><strong>Llevando almas a Cristo, transformando vidas para la eternidad.</strong></p>
+    </div>
+  </div>
 
 </header>
 
