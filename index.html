@@ -306,7 +306,10 @@ foto4.jpg
 <h2>Contáctanos</h2>
 
 <form action="https://formsubmit.co/evangelismotexodo@gmail.com" method="POST">
-  <!-- Redirección a tu página web -->
+  <!-- Desactivar reCAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Redirección a tu web -->
   <input type="hidden" name="_next" value="https://evangelismotexodo.github.io/">
   
   <input type="text" name="name" placeholder="Nombre" required>
