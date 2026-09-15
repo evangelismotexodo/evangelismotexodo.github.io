@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio en Vivo | Evangelismo Éxodo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 20px 10px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .player-box {
+      margin: 25px 0;
+      padding: 20px;
+      background: #eef2f5;
+      border-radius: 10px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e53935;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btn-back:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Radio Evangelismo Éxodo</h1>
+    <p>Transmitiendo esperanza y fe</p>
+  </header>
+
+  <div class="container">
+    <h2>Sintoniza Nuestra Señal en Vivo</h2>
+    <p>Haz clic en reproducir para escuchar nuestra transmisión online.</p>
+
+    <div class="player-box">
+      <!-- Reemplaza "TU_URL_DE_STREAMING" por la dirección URL de transmisión audio de tu proveedor (ej. Shoutcast, Icecast, ZenFM, etc.) -->
+      <audio controls autoplay>
+        <source src="TU_URL_DE_STREAMING" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+    </div>
+
+    <a href="index.html" class="btn-back">← Volver al Inicio</a>
+  </div>
+
+</body>
+</html>
